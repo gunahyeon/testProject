@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>test</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../signin.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="form-signin">
+      <form class="login-form">
+        <div id="displayUsernameDIV">
+          <h1 class="h1 mb-3 fw-normal">Welcome!</h1>
+          <h3 class="h3">Please Enter Your Information to Check Posts.</h3>
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="name@example.com"
+              required
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="username"
+            />
+            <label for="username">UserName</label>
+          </div>
+        </div>
+        <submit id="login" class="w-100 btn btn-lg btn-primary" tabindex="0"
+          >Login</submit
+        >
+      </form>
+    </main>
+    <hr />
+    <article class="form-signin">
+      <div id="posts"></div>
+    </article>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
